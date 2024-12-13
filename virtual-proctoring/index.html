@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speakers LinkedIn</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #0f0f0f;
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #ff7f50;
+        }
+
+        .speaker-cards {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .speaker-card {
+            background: #1a1a1a;
+            padding: 2rem;
+            border-radius: 15px;
+            width: 250px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+        }
+
+        .speaker-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .speaker-img {
+            width: 100%;
+            border-radius: 50%;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: #ff7f50;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #ccc;
+            margin-bottom: 1.5rem;
+        }
+
+        .linkedin-link {
+            padding: 10px 20px;
+            font-size: 1rem;
+            background-color: #ff7f50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            text-decoration: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .linkedin-link:hover {
+            background-color: #ff5722;
+        }
+
+        @media (max-width: 768px) {
+            .speaker-cards {
+                flex-direction: column;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Connect with Our Speakers</h1>
+        <div class="speaker-cards">
+            <div class="speaker-card">
+                <img src="rajendra.png" alt="Speaker 1" class="speaker-img">
+                <h3>Speaker 1</h3>
+                <p>Innovative Leader in Tech</p>
+                <a href="https://www.linkedin.com/in/rajendraacharya/" class="linkedin-link" target="_blank">Visit LinkedIn</a>
+            </div>
+            <div class="speaker-card">
+                <img src="shubham.jpeg" alt="Speaker 2" class="speaker-img">
+                <h3>Speaker 2</h3>
+                <p>Expert in Cloud Computing</p>
+                <a href="https://www.linkedin.com/in/shubham-pokhrel/" class="linkedin-link" target="_blank">Visit LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
